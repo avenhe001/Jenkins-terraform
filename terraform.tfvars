@@ -1,10 +1,10 @@
-aws_access_key =  "your key"
+aws_access_key =  "AKIAUYLITHQ3GZSWVDRQ"
 
 vpc_name =  "VPC WITH THREE TIER"
 
-aws_secret_key = "your key"
+aws_secret_key = "wOZhFWIvZQ++YHKYEYKk5kUc7XoLtyKVnPbaGBY9"
 
-aws_key_pair =  "your keypair"
+aws_key_pair =  "aven"
 
 aws_region = "ap-southeast-1"
 
