@@ -23,10 +23,6 @@ module "vpc" {
 
   enable_dns_support = true
 
-  enable_dynamodb_endpoint = true
-
-  enable_s3_endpoint = true
-
 }
 
 # WEB SG Clarify
