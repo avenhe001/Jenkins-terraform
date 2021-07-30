@@ -75,7 +75,7 @@ module "appsg" {
 
       rule = "all-all"
 
-      source_security_group_id = "${module.websg.this_security_group_id}"
+      source_security_group_id = "${module.websg.security_group_id}"
 
     },
 
@@ -88,7 +88,7 @@ module "appsg" {
 
       rule = "all-all"
 
-      source_security_group_id = "${module.websg.this_security_group_id}"
+      source_security_group_id = "${module.websg.security_group_id}"
 
     },
 
@@ -120,7 +120,7 @@ module "dbssg" {
 
       rule = "all-all"
 
-      source_security_group_id = "${module.appsg.this_security_group_id}"
+      source_security_group_id = "${module.appsg.security_group_id}"
 
     },
 
@@ -132,7 +132,7 @@ module "dbssg" {
 
       rule = "all-all"
 
-      source_security_group_id = "${module.appsg.this_security_group_id}"
+      source_security_group_id = "${module.appsg.security_group_id}"
 
     },
 
@@ -157,7 +157,7 @@ module "ec2_web_1a" {
 
   monitoring = true
 
-  vpc_security_group_ids = ["${module.websg.this_security_group_id}"]
+  vpc_security_group_ids = ["${module.websg.security_group_id}"]
 
   subnet_id = module.vpc.public_subnets[0]
 
@@ -189,7 +189,7 @@ module "ec2_web_1b" {
 
   monitoring = true
 
-  vpc_security_group_ids = ["${module.websg.this_security_group_id}"]
+  vpc_security_group_ids = ["${module.websg.security_group_id}"]
 
   subnet_id = module.vpc.public_subnets[1]
 
@@ -221,7 +221,7 @@ module "ec2_app_1a" {
 
   monitoring = true
 
-  vpc_security_group_ids = ["${module.appsg.this_security_group_id}"]
+  vpc_security_group_ids = ["${module.appsg.security_group_id}"]
 
   subnet_id = module.vpc.private_subnets[0]
 
@@ -253,7 +253,7 @@ module "ec2_app_1b" {
 
   monitoring = true
 
-  vpc_security_group_ids = ["${module.appsg.this_security_group_id}"]
+  vpc_security_group_ids = ["${module.appsg.security_group_id}"]
 
   subnet_id = module.vpc.private_subnets[1]
 
@@ -294,7 +294,7 @@ module "mysql01" {
 
   multi_az = true
 
-  vpc_security_group_ids = ["${module.dbssg.this_security_group_id}"]
+  vpc_security_group_ids = ["${module.dbssg.security_group_id}"]
 
   maintenance_window = "Mon:00:00-Mon:03:00"
 
