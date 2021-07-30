@@ -20,15 +20,15 @@ output "public_subnets" {
 
 output "web_security_group_id" {
   description = "The ID of the websg security group"
-  value       = module.websg.this_security_group_id
+  value       = module.websg.security_group_id
 }
 
 output "app_security_group_id" {
   description = "The ID of the app security group"
-  value       = module.appsg.this_security_group_id
+  value       = module.appsg.security_group_id
 }
 
 output "db_security_group_id" {
   description = "The ID of the db security group"
-  value       = module.dbssg.this_security_group_id
+  value       = module.dbssg.security_group_id
 }
