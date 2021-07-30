@@ -8,7 +8,7 @@ aws_key_pair =  "aven"
 
 aws_region = "ap-southeast-1"
 
-inst_ami = "ami-0e2e44c03b85f58b3"
+inst_ami = "ami-0f511ead81ccde020"
 
 inst_type = "t2.micro"
 
