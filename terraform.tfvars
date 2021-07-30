@@ -16,4 +16,4 @@ db_name = "vpc-with-three-tier"
 
 db_username = "root"
 
-db_password = "P@ssword"
+db_password = "Password"
