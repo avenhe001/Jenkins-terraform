@@ -1,8 +1,8 @@
-aws_access_key =  "AKIAUYLITHQ3GZSWVDRQ"
+aws_access_key =  "your access key"
 
 vpc_name =  "VPC WITH THREE TIER"
 
-aws_secret_key = "wOZhFWIvZQ++YHKYEYKk5kUc7XoLtyKVnPbaGBY9"
+aws_secret_key = "your secret key"
 
 aws_key_pair =  "aven"
 
