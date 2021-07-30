@@ -12,7 +12,7 @@ inst_ami = "ami-0f511ead81ccde020"
 
 inst_type = "t2.micro"
 
-db_name = "vpc-with-three-tier"
+db_name = "vpcwiththreetier"
 
 db_username = "root"
 
